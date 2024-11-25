@@ -46,7 +46,14 @@ quantidadeLanche[i] = parseFloat(prompt("Digite a quantidade de lanches desejado
 condicao = prompt("Deseja adicionar mais um lanche?\n Digite 'sim' para continuar: ");
 }
 
+var totalLanche = 0;
 
+var total = 0;
+for (var i = 0; i < lanche.length; i++){
+   totalLanche += quantidadeLanche * lanche[i].valor;
+}
+
+console.log("O valor do pedido de lanches foi: " + totalLanche.length);
 
 
 var bebida = [];
